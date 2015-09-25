@@ -14,10 +14,19 @@ Install
 
 Download and install Packer: https://github.com/mitchellh/packer#quick-start
 
+It's recommended to build this plugin using `goop`. Install `goop`:
+
 ````Shell
-go get -d github.com/bhcleek/packer-provisioner-ansible
-go build -o /usr/local/bin/packer-provisioner-ansible ./plugin/provisioner-ansible
+go get github.com/nitrous-io/goop && go build github.com/nitrous-io/goop
 ````
+
+Then build the packer plugin. From within the plugin source code directory use the commands:
+
+````Shell
+    goop install && goop go build
+````
+
+Copy the binary `packer-provisioner-ansible` to your packer directory.
 
 Getting Started
 ======
