@@ -23,7 +23,7 @@ go get github.com/nitrous-io/goop && go build github.com/nitrous-io/goop
 Then build the packer plugin. From within the plugin source code directory use the commands:
 
 ````Shell
-    goop install && goop go build
+goop install && goop go build
 ````
 
 Copy the binary `packer-provisioner-ansible` to your packer directory.
